@@ -4,8 +4,9 @@ import openai
 import re
 import threading
 import win32pipe, win32file
+from config import OPENAI_API_KEY
 
-openai.api_key = ""
+openai.api_key = OPENAI_API_KEY
 node_path = 'C:\\Program Files\\nodejs\\node.exe'
 node_script = 'bot_Front_end.js'
 
